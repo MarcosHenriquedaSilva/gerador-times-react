@@ -52,7 +52,7 @@ function App() {
             <div key={index}>
               <h3>Time {index + 1}</h3>
               <ul>
-                {time.map((p, i) => (
+                {time.map((p: string, i: number) => (
                   <li key={i}>{p}</li>
                 ))}
               </ul>
