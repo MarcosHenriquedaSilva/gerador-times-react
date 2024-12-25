@@ -1,20 +1,121 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset de margin e padding para todos os elementos */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-div {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+/* Estilos gerais para o body */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding-top: 50px; /* Ajuste do padding para não ficar muito no topo */
+  background-color: #161616; /* Fundo escuro */
 }
 
-textarea, input, button {
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Alinhamento do título */
+h1 {
+  align-items: center;
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #f5b01c;
+  margin-bottom: 20px; /* Ajuste de espaço entre o título e os campos */
+  text-align: center;
+
+}
+
+
+/* Estilo do textarea e input */
+textarea, input {
   font-size: 16px;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
+  margin-bottom: 15px; /* Margem entre os elementos */
+  border: 1px solid #ffffff;
   border-radius: 5px;
+  width: 100%; /* Garantir que ocupem toda a largura disponível */
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* Estilo para o botão */
+button {
+  border-radius: 8px;
+  border: 1px ;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  color: #f5b01c;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* O botão ocupará toda a largura disponível */
+}
+
+button:hover {
+  background-color: #f5b01c;
+  color: #0e0d0d;
+}
+
+/* Estilo dos times gerados */
+.times-container {
+  margin-top: 20px;
+}
+
+.times-container h2 {
+  color: #1b1812;
+}
+.times-container h3 {
+  color: #f5b01c;
+}
+
+.times-container .time-item {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  
+  padding: 12px;
+  margin: 5px 0;
+  color: #fdfdfb;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #f7f5f1;
+  margin-top: 100px;
+  padding: 10px;
+  background-color:#2a2a2a;
+}
+
+.footer a {
+  color: #f5b01c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
