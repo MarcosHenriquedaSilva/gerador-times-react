@@ -78,15 +78,21 @@ button:hover {
   margin-top: 20px;
 }
 
-.times-container h2 {
-  color: #1b1812;
-}
-.times-container h3 {
+.times-container h2,.times-container h3 {
   color: #f5b01c;
+
 }
 
 .times-container .time-item {
   margin-bottom: 15px;
+}
+
+.times-container h2, .times-container h3 {
+  transition: color 0.3s ease;
+}
+
+button {
+  transition: all 0.3s ease; /* Transição para hover */
 }
 
 ul {
@@ -118,4 +124,36 @@ ul li {
 
 .footer a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 20px; /* Reduz o espaço no topo */
+    justify-content: flex-start; /* Ajusta alinhamento em telas pequenas */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Reduz o tamanho do título */
+  }
+
+  button {
+    font-size: 0.9em; /* Ajuste de fonte para botões */
+    padding: 0.5em 1em; /* Reduz o padding do botão */
+  }
+
+  .container {
+    padding: 15px; /* Reduz o padding interno do container */
+  }
+
+  .footer {
+    font-size: 10px; /* Reduz o tamanho do rodapé */
+  }
+}
+@media (max-width: 480px) {
+  button {
+    width: auto; /* Permitir largura adaptável em telas muito pequenas */
+  }
+
+  .times-container {
+    font-size: 0.9em; /* Reduz o tamanho geral dos textos */
+  }
 }
